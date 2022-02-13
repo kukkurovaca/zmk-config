@@ -11,62 +11,17 @@
 
 
 
-// Commenting out combos -- not sure if I will need combos on a 12col, will revisit
-/* / {
-    combos {
-        compatible = "zmk,combos";
-        combo_undo {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp Q>;
-        };
-        combo_semicolon {
-            timeout-ms = <50>;
-            key-positions = <33 34>;
-            bindings = <&kp SEMI>;
-        };
-    };
-}; */
-
 / {
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_1 &encoder_2 &encoder_3>;
     };
-// Disabling default homerow mods behaviors -- will update this later with my settings
-/* 
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-        hs: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-    };
- */
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             label = "Base";
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -75,7 +30,7 @@
 	&mt LCTRL ESC   &kp Q &kp W &kp E &kp R &kp T                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &mt LALT MINUS
 	&lt RAISE TAB  	&kp A &kp S &kp D &kp F &kp G                       &kp LA(TAB)               &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT 		&kp Z &kp X &kp C &kp V &kp B                                                 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT ENTER
-                    &kp C_MUTE  &kp LCTRL   &kp LALT  &kp BSPC                        &lt SPACE   &kp LGUI &kp RCTRL     &kp LC(BSPC)
+                    &kp C_MUTE  &kp LCTRL   &kp LALT  &kp BSPC                        &kp SPACE   &kp LGUI &kp RCTRL     &kp LC(BSPC)
             >;
         };
 
