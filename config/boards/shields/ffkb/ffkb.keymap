@@ -24,33 +24,33 @@
         base_layer {
             label = "Base";
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>;
 
             bindings = <
 	&mt LCTRL ESC   &kp Q &kp W &kp E &kp R &kp T                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &mt LALT MINUS
 	&lt RAISE TAB  	&kp A &kp S &kp D &kp F &kp G                       &kp LA(TAB)               &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT 		&kp Z &kp X &kp C &kp V &kp B                                                 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT ENTER
-                    &kp C_MUTE  &kp LCTRL   &kp LALT  &kp BSPC                        &kp SPACE   &kp LGUI &kp RCTRL     &kp LC(BSPC)
+                    &kp C_MUTE  &kp LCTRL   &kp BSPC  &kp LALT                        &kp LGUi   &kp SPACE &kp RCTRL     &kp LC(BSPC)
             >;
         };
 
         raise_layer {
             label = "Raise";
             
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>;
             
             bindings = <
 	&trans  &kp EXCL &kp UP   &kp AT    &kp DLLR &kp PRCNT                                                &kp AMPS  &kp N7 &kp N8    &kp N9   &kp STAR &kp FSLH
 	&trans  &kp LEFT &kp DOWN &kp RIGHT &kp LPAR &kp RPAR                &trans                           &kp CARET &kp N4 &kp N5    &kp N6   &kp MINUS &kp EQUAL
 	&trans	&kp LBRC &kp RBRC &kp POUND &kp LBKT &kp RBKT                                                 &kp N0    &kp N1 &kp N2    &kp N3   &kp PLUS &kp BSLH
-                            &trans    &mo LOWER  &trans   &kp DEL                            &trans       &kp N0     &kp DOT      &trans
+                            &trans    &mo LOWER  &kp DEL   &trans                            &trans       &kp N0     &kp DOT      &trans
             >;
         };
 
         lower_layer {
             label = "Lower";
             
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>;
             
             bindings = <
 	&reset  	 &kp LG(TAB)          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &kp LA(F4)                           &kp PSCRN  &kp C_VOL_UP &kp HOME  &kp PG_UP  &kp F11 &reset
