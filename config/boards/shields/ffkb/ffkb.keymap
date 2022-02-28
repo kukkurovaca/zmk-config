@@ -18,6 +18,17 @@
         sensors = <&encoder_1 &encoder_2 &encoder_3>;
     };
 
+    behaviors {
+        &mt {
+            retro-tap;
+            flavor = "balanced";
+        };
+        &lt {
+            retro-tap;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
