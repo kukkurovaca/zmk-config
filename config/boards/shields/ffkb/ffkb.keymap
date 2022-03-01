@@ -34,7 +34,8 @@
         mthp: hold_preferred_tap {
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOLD_PREFERRED_TAP";            
-                        #binding-cells = <2>;                     
+                        #binding-cells = <2>;
+                        tapping-term-ms = <200>;                  
                         flavor = "hold-preferred";      
                         bindings = <&kp>, <&kp>;
         };
