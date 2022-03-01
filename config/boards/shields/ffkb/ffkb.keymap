@@ -11,11 +11,11 @@
 
 &mt {
     retro-tap;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 &lt {
     retro-tap;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 &encoder_3 {
