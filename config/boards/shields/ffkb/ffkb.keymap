@@ -18,6 +18,10 @@
     flavor = "balanced";
 };
 
+&encoder_3 {
+    resolution = <2>;
+};
+
 
 / {
 
