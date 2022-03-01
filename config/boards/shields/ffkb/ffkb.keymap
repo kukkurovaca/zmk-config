@@ -19,7 +19,7 @@
 };
 
 &encoder_3 {
-    resolution = <2>;
+    resolution = <3>;
 };
 
 
