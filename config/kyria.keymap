@@ -13,7 +13,30 @@
 #define RAISE 1
 #define LOWER 2
 
+&mt {
+    retro-tap;
+    flavor = "tap-preferred";
+};
+&lt {
+    retro-tap;
+    flavor = "tap-preferred";
+};
+
+
+
 / {
+	behaviors {
+        mthp: hold_preferred_tap {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOLD_PREFERRED_TAP";            
+                        #binding-cells = <2>;
+                        tapping-term-ms = <200>;                  
+                        flavor = "hold-preferred";      
+                        bindings = <&kp>, <&kp>;
+        };
+    };
+
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -23,7 +46,7 @@
 			bindings = <
 	&mt LCTRL ESC   &kp Q &kp W &kp E &kp R &kp T                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &mt LALT MINUS
 	&lt RAISE TAB  	&kp A &kp S &kp D &kp F &kp G                                                 &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT 		&kp Z &kp X &kp C &kp V &kp B &mo LOWER &kp LGUI        &kp PSCRN  &mo RAISE  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RCTRL ENTER
+	&kp LSHFT 		&kp Z &kp X &kp C &kp V &kp B &mo LOWER &kp LGUI        &kp PSCRN  &mo RAISE  &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mthp RCTRL ENTER
 	        	         &kp LGUI &kp LCTRL &kp LALT &kp BSPC &kp DEL       &kp ENTER  &kp SPACE  &kp RALT &kp RCTRL &kp RALT
 			>;
 
@@ -34,9 +57,9 @@
 			label = "Raise";
 
 			bindings = <
-	&trans  &kp EXCL &kp UP   &kp AT    &kp DLLR &kp PRCNT                                                &kp AMPS  &kp N7 &kp N8    &kp N9   &kp STAR &kp FSLH
-	&trans  &kp LEFT &kp DOWN &kp RIGHT &kp LPAR &kp RPAR                                                 &kp CARET &kp N4 &kp N5    &kp N6   &kp MINUS &kp EQUAL
-	&trans	&kp LBRC &kp RBRC &kp POUND &kp LBKT &kp RBKT &trans &trans      			  &trans  &trans  &kp N0    &kp N1 &kp N2    &kp N3   &kp PLUS &kp BSLH
+	&kp GRAVE	&kp EXCL &kp UP   &kp AT    &kp DLLR &kp PRCNT                                                &kp AMPS  &kp N7 &kp N8    &kp N9   &kp STAR &kp FSLH
+	&trans  	&kp LEFT &kp DOWN &kp RIGHT &kp LPAR &kp RPAR                                                 &kp CARET &kp N4 &kp N5    &kp N6   &kp MINUS &kp EQUAL
+	&trans		&kp LBRC &kp RBRC &kp POUND &kp LBKT &kp RBKT &trans &trans      			  &trans  &trans  &kp N0    &kp N1 &kp N2    &kp N3   &kp PLUS &kp BSLH
 	        	         &trans &trans &trans &trans &trans       			              &trans  &trans  &kp N0 &kp N0 &kp KP_DOT
 			>;
 
