@@ -50,7 +50,7 @@
 	        	         &kp LGUI &kp LCTRL &kp LALT &kp BSPC &kp DEL       &kp ENTER  &kp SPACE  &kp RALT &kp RCTRL &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		raise_layer {
@@ -63,7 +63,7 @@
 	        	         &trans &trans &trans &trans &trans       			              &trans  &kp N0  &kp N0 &kp KP_DOT &kp KP_DOT
 			>;
 
-			sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
 
 		};
 		
@@ -76,7 +76,7 @@
 	        								         &trans &trans &trans &trans &trans       		      &trans  &trans  &kp N0 &kp N0 &kp KP_DOT
 			>;
 
-			sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
 
 		};
 	};
