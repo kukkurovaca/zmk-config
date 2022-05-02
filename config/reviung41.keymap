@@ -12,8 +12,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE    0
-#define RAISE   1
-#define LOWER   2
+// #define RAISE   1
+// #define LOWER   2
 
 &mt {
     retro-tap;
@@ -54,27 +54,27 @@
                         >;
                 };
 
-                raise_layer {
-                        label = "Raise";
+//                 raise_layer {
+//                         label = "Raise";
 
-                        bindings = <
-   &kp GRAVE &kp EXCL   &kp UP    &kp AT     &kp DLLR &kp PRCNT           &kp AMPS  &kp N7  &kp N8 &kp N9  &kp STAR  &kp FSLH
-   &trans    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LPAR &kp RPAR            &kp CARET &kp N4  &kp N5 &kp N6  &kp MINUS &kp EQUAL
-   &trans    &kp LBRC   &kp RBRC  &kp POUND  &kp LBKT &kp RBKT            &kp N0    &kp N1  &kp N2 &kp N3  &kp PLUS  &kp BLSH
-                                            &trans    &kp DEL    &trans   &kp N0    &kp DOT
-                        >;
-                };
+//                         bindings = <
+//    &kp GRAVE &kp EXCL   &kp UP    &kp AT     &kp DLLR &kp PRCNT           &kp AMPS  &kp N7  &kp N8 &kp N9  &kp STAR  &kp FSLH
+//    &trans    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LPAR &kp RPAR            &kp CARET &kp N4  &kp N5 &kp N6  &kp MINUS &kp EQUAL
+//    &trans    &kp LBRC   &kp RBRC  &kp POUND  &kp LBKT &kp RBKT            &kp N0    &kp N1  &kp N2 &kp N3  &kp PLUS  &kp BLSH
+//                                             &trans    &kp DEL    &trans   &kp N0    &kp DOT
+//                         >;
+//                 };
 
-                lower_layer {
-                        label = "Lower";
+//                 lower_layer {
+//                         label = "Lower";
 
-                        bindings = <
-   &reset      &kp LG(TAB)        &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &kp N5            &kp PSCRN   &kp C_VOL_UP  &kp HOME  &kp PG_UP    &kp N0    &reset
-   &bootloader &kp LC(N1)         &kp LC(N2)     &kp LC(N3)     &kp LC(N4)    &kp LC(N9)        &trans      &kp C_VOL_DN  &kp END   &kp PG_DN    &trans    &bootloader
-   &trans      &ext_power EP_TOG  &kp BT_CLR     &kp CAPS       &trans        &kp LG(DOT)       &trans      &kp C_MUTE    &trans    &trans       &trans    &trans
-                                                                           &trans  &trans &trans &trans  &trans
-                        >;
-                };
+//                         bindings = <
+//    &reset      &kp LG(TAB)        &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &kp N5            &kp PSCRN   &kp C_VOL_UP  &kp HOME  &kp PG_UP    &kp N0    &reset
+//    &bootloader &kp LC(N1)         &kp LC(N2)     &kp LC(N3)     &kp LC(N4)    &kp LC(N9)        &trans      &kp C_VOL_DN  &kp END   &kp PG_DN    &trans    &bootloader
+//    &trans      &ext_power EP_TOG  &kp BT_CLR     &kp CAPS       &trans        &kp LG(DOT)       &trans      &kp C_MUTE    &trans    &trans       &trans    &trans
+//                                                                            &trans  &trans &trans &trans  &trans
+//                         >;
+//                 };
 
         };
 };
