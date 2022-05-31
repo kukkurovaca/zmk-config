@@ -41,15 +41,16 @@
         compatible = "zmk,combos";
         combo_lower {
             timeout-ms = <50>;
-            key-positions = <31 42>;
-            bindings = <&kp B>;
+            key-positions = <30 41>;
+            bindings = <&mo LOWER>;
         };
 		combo_lgui {
             timeout-ms = <50>;
-            key-positions = <32 45>;
-            bindings = <&kp C>;
+            key-positions = <31 44>;
+            bindings = <&kp LGUI>;
         };
     };
+
 
 
 	keymap {
