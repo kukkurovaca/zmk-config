@@ -42,12 +42,12 @@
         combo_lower {
             timeout-ms = <50>;
             key-positions = <31 42>;
-            bindings = <&mo LOWER>;
+            bindings = <&kp B>;
         };
 		combo_lgui {
             timeout-ms = <50>;
             key-positions = <32 45>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp C>;
         };
     };
 
