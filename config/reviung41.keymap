@@ -59,7 +59,7 @@
 
                         bindings = <
    &kp GRAVE &kp EXCL   &kp UP    &kp AT     &kp DLLR &kp PRCNT           &kp AMPS  &kp N7  &kp N8 &kp N9  &kp STAR  &kp FSLH
-   &trans    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LPAR &kp RPAR            &kp CARET &kp N4  &kp N5 &kp N6  &kp MINUS &kp EQUAL
+   &kp CAPS    &kp LEFT   &kp DOWN  &kp RIGHT  &kp LPAR &kp RPAR            &kp CARET &kp N4  &kp N5 &kp N6  &kp MINUS &kp EQUAL
    &trans    &kp LBRC   &kp RBRC  &kp POUND  &kp LBKT &kp RBKT            &kp N0    &kp N1  &kp N2 &kp N3  &kp PLUS  &kp BSLH
                                             &trans    &kp DEL    &trans   &kp N0    &kp DOT
                         >;
